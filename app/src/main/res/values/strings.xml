@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mail</string>
+    <string name="put_mail">请输入邮箱</string>
+    <string name="mail">邮箱</string>
+    <string name="password">密码</string>
+    <string name="put_password">请输入密码</string>
+    <string name="login">登 录</string>
+    <string name="inbox">收件箱</string>
+    <string name="new_mail">新邮件</string>
+    <string name="put_content">请输入内容</string>
+    <string name="send_email">发送</string>
+    <string name="send_back">《</string>
+    <drawable name="clr_normal">@color/colorBlack</drawable>
+    <drawable name="clr_pressed">#fff</drawable>
+    <drawable name="btn_normal">@color/colorRed</drawable>
+    <drawable name="btn_pressed">#8B0000</drawable>
+</resources>

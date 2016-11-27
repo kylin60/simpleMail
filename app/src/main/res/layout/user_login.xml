@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray">
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_email"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/t_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/mail"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/t_mail"
+            android:background="#EEEFFF" />
+
+        <EditText
+            android:id="@+id/e_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/view1"
+            android:background="@color/colorWhite"
+            android:ems="19"
+            android:hint="@string/put_mail"
+            android:inputType="textEmailSubject"
+            android:padding="1dp"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/i_del_mail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/text_del"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_wihte_frame"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/t_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/password"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/t_password"
+            android:background="#EEEFFF" />
+
+        <EditText
+            android:id="@+id/e_password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/line"
+            android:background="@color/colorWhite"
+            android:ems="19"
+            android:inputType="textPassword"
+            android:hint="@string/put_password"
+            android:padding="1dp"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/i_del_password"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/text_del"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_login"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:textSize="18sp"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:onClick="Login"/>
+
+</LinearLayout>
